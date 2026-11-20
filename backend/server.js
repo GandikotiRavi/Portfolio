@@ -130,6 +130,19 @@ const projects = [
     githubUrl: "https://github.com/GandikotiRavi/Task-Management-Application",
     liveUrl: "#",
     featured: true
+  },
+  {
+    id: 5,
+    title: "Personal Portfolio Website",
+    category: "webapps",
+    badge: "Portfolio & Web App",
+    icon: "🌐",
+    bannerStyle: "background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(99, 102, 241, 0.35));",
+    description: "A modern, responsive full-stack developer portfolio featuring glassmorphic design, dynamic REST API backend integration, custom dark/light theme switching, and interactive project showcases.",
+    technologies: ["HTML5", "CSS3 / Modern CSS", "JavaScript (ES6+)", "Node.js", "Express.js", "REST APIs"],
+    githubUrl: "https://github.com/GandikotiRavi/Portfolio",
+    liveUrl: "#",
+    featured: true
   }
 ];
 

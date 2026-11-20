@@ -18,6 +18,8 @@ A modern, responsive, and visually attractive full-stack developer portfolio des
   - **Smart Hostel Management System**: End-to-end residential accommodation, room allocation, and occupancy tracking ([View Code](https://github.com/GandikotiRavi/Hostel-Management-System)).
   - **Academic Student Management System**: Centralized academic lifecycle, attendance tracking, and performance reporting ([View Code](https://github.com/GandikotiRavi)).
   - **Task Management Application (TaskFlow)**: Full-stack task organization and workflow tracker with real-time updates ([View Code](https://github.com/GandikotiRavi/Task-Management-Application)).
+  - **Personal Portfolio Website**: Modern responsive developer portfolio with REST API integration and theme toggle ([View Code](https://github.com/GandikotiRavi/Portfolio)).
+- **Available for Opportunities**: Actively seeking opportunities in **Web Development**, **Software Development**, and **Software Engineering** (Full-time & Internships).
 - **Dark / Light Mode**: Built-in interactive theme switcher with persistence via `localStorage`.
 - **Integrated Profile Photo**: High-resolution professional portrait featuring an animated glowing frame and status pills.
 - **LinkedIn & Professional Experience**: Comprehensive highlights of experience as a **Full Stack Engineer at Thiranex** and academic status (B.Tech in Computer Science and Engineering, Class of 2027).

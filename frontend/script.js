@@ -184,6 +184,17 @@ const FALLBACK_PROJECTS = [
     description: "A comprehensive full-stack task management application enabling users to organize goals, categorize tasks by priority, update completion status, track deadlines, and persist records with secure authentication and real-time status updates.",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "REST APIs"],
     githubUrl: "https://github.com/GandikotiRavi/Task-Management-Application"
+  },
+  {
+    id: 5,
+    title: "Personal Portfolio Website",
+    category: "webapps",
+    badge: "Portfolio & Web App",
+    icon: "🌐",
+    bannerStyle: "background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(99, 102, 241, 0.35));",
+    description: "A modern, responsive full-stack developer portfolio featuring glassmorphic design, dynamic REST API backend integration, custom dark/light theme switching, and interactive project showcases.",
+    technologies: ["HTML5", "CSS3 / Modern CSS", "JavaScript (ES6+)", "Node.js", "Express.js", "REST APIs"],
+    githubUrl: "https://github.com/GandikotiRavi/Portfolio"
   }
 ];
 
