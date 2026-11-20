@@ -1,13 +1,729 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-<title>Personal Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Gandikota Ravi Chandra - Full Stack Engineer, creator of TransplantIQ, Hostel Management, Student Management, and B.Tech CSE student at RMK College of Engineering and Technology.">
+  <meta name="author" content="Gandikota Ravi Chandra">
+  <title>Gandikota Ravi Chandra | Full Stack Engineer & Cloud Enthusiast</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-<h1>Ravi Chandra</h1>
-<p>Full Stack Developer</p>
-<section id="projects"></section>
-<script src="script.js"></script>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-center-right"></div>
+  <div class="ambient-glow glow-bottom-left"></div>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo-wrapper">
+        <div class="logo-badge">RG</div>
+        <span>Ravi Chandra</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="#contact" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Connect</a>
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <div class="badge-pill">
+              <span class="badge-pulse-dot"></span>
+              <span>Available for Opportunities</span>
+            </div>
+            <div class="badge-pill" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3); background: rgba(6, 182, 212, 0.1);">
+              <span>⚡ Full Stack Engineer</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Gandikota Ravi Chandra</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Full Stack Engineer and Computer Science student at RMK College of Engineering and Technology. Creator of <strong>TransplantIQ</strong>, <strong>Hostel Management</strong>, and <strong>Student Management</strong> systems. Experienced in building high-performance web applications, scalable REST APIs, and modern cloud architectures.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.89H5.06v8.61h2.8z"/></svg>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h3>2027</h3>
+              <p>B.Tech CSE Class</p>
+            </div>
+            <div class="stat-item">
+              <h3>Thiranex</h3>
+              <p>Full Stack Engineer</p>
+            </div>
+            <div class="stat-item">
+              <h3>8+</h3>
+              <p>Projects Engineered</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-avatar-frame">
+            <img src="assets/profile.jpg" alt="Gandikota Ravi Chandra" class="profile-img">
+          </div>
+
+          <div class="floating-card card-top">
+            <div class="floating-icon">🫀</div>
+            <div class="floating-text">
+              <h5>TransplantIQ</h5>
+              <p>Healthcare Innovation</p>
+            </div>
+          </div>
+
+          <div class="floating-card card-bottom">
+            <div class="floating-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">🏢</div>
+            <div class="floating-text">
+              <h5>Management Systems</h5>
+              <p>Hostel & Student Platforms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">Driven by Innovation & Engineering</h2>
+          <p class="section-description">
+            Combining academic rigor with industry full-stack experience to build robust, human-centric software solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h4>
+              <span>👨‍💻</span>
+              <span>Who I Am</span>
+            </h4>
+            <p>
+              I am <strong>Gandikota Ravi Chandra</strong>, an ambitious Software Engineer currently pursuing my Bachelor of Technology (B.Tech) in Computer Science and Engineering at <strong>RMK College of Engineering and Technology (RMKCET)</strong> in Chennai (Graduating Class of 2027).
+            </p>
+            <p>
+              With practical engineering experience as a <strong>Full Stack Engineer at Thiranex</strong>, I build real-world software solutions across critical domains. My portfolio includes <strong>TransplantIQ</strong> (an intelligent organ transplant and matching system), enterprise-grade <strong>Hostel Management</strong> and <strong>Student Management</strong> applications, as well as responsive e-commerce and task management platforms.
+            </p>
+            <ul class="about-points">
+              <li>
+                <span class="point-icon">✦</span>
+                <span>Specialized in building end-to-end full stack web platforms with JavaScript, Node.js, Express, and REST APIs.</span>
+              </li>
+              <li>
+                <span class="point-icon">✦</span>
+                <span>Proven track record solving complex institutional and healthcare workflows with clean, scalable code.</span>
+              </li>
+              <li>
+                <span class="point-icon">✦</span>
+                <span>Dedicated to responsive UI/UX, database architecture, performance optimization, and cloud deployment.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h4>
+              <span>📋</span>
+              <span>Quick Overview</span>
+            </h4>
+            <div class="quick-info-grid">
+              <div class="info-item">
+                <span class="info-label">Full Name</span>
+                <span class="info-value">Gandikota Ravi Chandra</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Chennai, Tamil Nadu, India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Degree</span>
+                <span class="info-value">B.Tech in Computer Science</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">College</span>
+                <span class="info-value">RMK College of Eng. & Tech</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Expected Graduation</span>
+                <span class="info-value">2027</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">gandcs048@rmkcet.ac.in</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Flagship Project</span>
+                <span class="info-value" style="color: var(--secondary);">TransplantIQ Platform</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Availability</span>
+                <span class="info-value" style="color: var(--accent-emerald);">Open for Internships / Roles</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 150px; font-size: 0.85rem;">
+                LinkedIn Profile ↗
+              </a>
+              <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 150px; font-size: 0.85rem;">
+                GitHub Profile ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section" id="experience" style="background: rgba(15, 21, 38, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Work Experience</span>
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-description">
+            Hands-on software development experience building production-ready architectures and scalable web products.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- 1. Thiranex -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Full Stack Development Intern</h3>
+                  <div class="timeline-company">Thiranex</div>
+                </div>
+                <span class="timeline-badge">Jun 4 – Jul 3</span>
+              </div>
+              <p class="timeline-desc">
+                Built and deployed a full-stack Task Management Application using React.js, Node.js, Express.js, and MongoDB, enabling users to create, assign, and track tasks through a centralized dashboard with secure authentication and real-time status updates on a responsive front end.
+              </p>
+              <ul class="timeline-tasks">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Architected full-stack centralized dashboards and responsive React front-end components.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Engineered scalable REST APIs with Express.js and managed schema data in MongoDB.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Integrated secure authentication, task workflows, and live state updates.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2. StaxTech -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color: var(--accent-cyan); box-shadow: 0 0 15px var(--accent-cyan);"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Development Intern</h3>
+                  <div class="timeline-company">StaxTech</div>
+                </div>
+                <span class="timeline-badge" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3);">Jul 10 – Aug 10</span>
+              </div>
+              <p class="timeline-desc">
+                Developed responsive web applications including an e-commerce platform and an interactive quiz game utilizing modern HTML5, CSS3, and JavaScript.
+              </p>
+              <ul class="timeline-tasks">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Engineered responsive e-commerce shopping experience with product listings, add-to-cart operations, and persistent cart storage via localStorage.</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Built interactive quiz web application with multiple-choice questions, real-time feedback, countdown timers, and final score calculations.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-description">
+            A versatile set of programming languages, frameworks, and developer tools used to engineer high-quality software.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper icon-frontend">💻</div>
+              <div>
+                <h3 class="skill-card-title">Frontend Development</h3>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">User Interface & Experience</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3 / Modern CSS</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Flexbox & CSS Grid</span>
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">UI/UX Principles</span>
+              <span class="skill-tag">Glassmorphism & Micro-animations</span>
+            </div>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper icon-backend">⚙️</div>
+              <div>
+                <h3 class="skill-card-title">Backend & APIs</h3>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Server-side Architecture</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Database CRUD Operations</span>
+              <span class="skill-tag">JSON Data Handlers</span>
+              <span class="skill-tag">CORS Middleware</span>
+              <span class="skill-tag">API Integration</span>
+              <span class="skill-tag">Asynchronous JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Tools & Cloud -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper icon-tools">☁️</div>
+              <div>
+                <h3 class="skill-card-title">Cloud, Database & Tools</h3>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Deployment & Workflow</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Cloud Computing</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">NPM</span>
+              <span class="skill-tag">CI/CD Concepts</span>
+              <span class="skill-tag">Web Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section" id="projects" style="background: rgba(15, 21, 38, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfolio Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            Explore selected projects including TransplantIQ, institutional management platforms, e-commerce, and full-stack web applications.
+          </p>
+        </div>
+
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="healthcare">Healthcare & AI</button>
+          <button class="filter-btn" data-filter="management">Management Systems</button>
+          <button class="filter-btn" data-filter="webapps">Full Stack Apps</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- 1. TransplantIQ -->
+          <div class="project-card" data-category="healthcare">
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.35), rgba(99, 102, 241, 0.4));">
+              <span class="project-banner-icon">🫀</span>
+              <span class="project-category-badge">Flagship / Healthcare AI</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">TransplantIQ - Agentic AI Organ Transplant Coordination</h3>
+              <p class="project-desc">
+                An Agentic AI-powered organ transplant coordination and clinical decision support system (Db2Hack 2026). Features automated donor-recipient compatibility assessment, critical organ status & transit tracking, and clinical workflow synchronization.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">Agentic AI</span>
+                <span class="tech-pill">RESTful APIs</span>
+                <span class="tech-pill">Modern UI/UX</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/TransplantIQ" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Smart Hostel Management System -->
+          <div class="project-card" data-category="management">
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(239, 68, 68, 0.4));">
+              <span class="project-banner-icon">🏢</span>
+              <span class="project-category-badge">Management System</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Smart Hostel Management System</h3>
+              <p class="project-desc">
+                An end-to-end residential accommodation platform designed for college campuses and hostels. Automates room allocation, resident onboarding, leave application approvals, maintenance complaint ticketing, and real-time room occupancy analytics.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">Database CRUD</span>
+                <span class="tech-pill">CSS3 Flexbox</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/Hostel-Management-System" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Academic Student Management System -->
+          <div class="project-card" data-category="management">
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.35), rgba(6, 182, 212, 0.4));">
+              <span class="project-banner-icon">🎓</span>
+              <span class="project-category-badge">EdTech & Management</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Academic Student Management System</h3>
+              <p class="project-desc">
+                A centralized academic administration platform for educational institutions to manage complete student lifecycle records: course enrollment, semester attendance monitoring, internal assessment grading, and automated report card generation.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">Database Management</span>
+                <span class="tech-pill">UI Dashboards</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Task Management Application -->
+          <div class="project-card" data-category="webapps">
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(168, 85, 247, 0.3));">
+              <span class="project-banner-icon">📝</span>
+              <span class="project-category-badge">Full Stack & Productivity</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Task Management Application (TaskFlow)</h3>
+              <p class="project-desc">
+                A comprehensive full-stack task management application enabling users to organize goals, categorize tasks by priority, update completion status, track deadlines, and persist records with secure authentication and real-time status updates.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/Task-Management-Application" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">Education & Qualifications</h2>
+          <p class="section-description">
+            Verified academic performance and engineering milestones from official records.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- 1. B.E. CSE -->
+          <div class="education-card">
+            <div class="edu-icon-box">🎓</div>
+            <div class="edu-details">
+              <div class="education-card-header">
+                <div>
+                  <h4>Bachelor of Engineering (B.E.)</h4>
+                  <div class="edu-institution">Computer Science and Engineering (Cloud Computing)</div>
+                </div>
+                <span class="edu-score-pill">CGPA: 7.41 / 10.0</span>
+              </div>
+              <p class="edu-stream">
+                <strong>R.M.K. College of Engineering and Technology (RMKCET)</strong> • Chennai, Tamil Nadu
+              </p>
+              <div class="edu-meta">
+                <span>📅 <strong>2023 – 2027</strong> (Final Year / Graduating 2027)</span>
+                <span>📍 Chennai, India</span>
+                <span>📚 Specialization: Cloud Technologies, Full Stack Web Development, Data Structures, Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Intermediate (Class XII) -->
+          <div class="education-card">
+            <div class="edu-icon-box icon-inter">🏫</div>
+            <div class="edu-details">
+              <div class="education-card-header">
+                <div>
+                  <h4>Higher Secondary / Intermediate (Class XII)</h4>
+                  <div class="edu-institution">MPC (Mathematics, Physics & Chemistry)</div>
+                </div>
+                <span class="edu-score-pill pill-cyan">Marks: 91%</span>
+              </div>
+              <p class="edu-stream">
+                <strong>Narayana Junior College</strong> • Board of Intermediate Education
+              </p>
+              <div class="edu-meta">
+                <span>📅 <strong>2021 – 2023</strong></span>
+                <span>🏆 First Class with Distinction (91%)</span>
+                <span>🔬 Focus: Advanced Mathematics, Physics, Chemistry, Analytical Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. 10th Standard (SSC) -->
+          <div class="education-card">
+            <div class="edu-icon-box icon-school">📜</div>
+            <div class="edu-details">
+              <div class="education-card-header">
+                <div>
+                  <h4>Secondary School Certificate (10th Standard / Class X)</h4>
+                  <div class="edu-institution">Secondary Education (SSC)</div>
+                </div>
+                <span class="edu-score-pill pill-emerald">Marks: 98%</span>
+              </div>
+              <p class="edu-stream">
+                <strong>Narayana High School</strong> • State Board (SSC)
+              </p>
+              <div class="edu-meta">
+                <span>📅 <strong>2020 – 2021</strong></span>
+                <span>🏆 Outstanding Academic Excellence (98%)</span>
+                <span>📖 Focus: Mathematics, Science, English, Social Studies & Foundational Aptitude</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section" id="contact" style="background: rgba(15, 21, 38, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Great</h2>
+          <p class="section-description">
+            I am currently open for software engineering internships, collaborative opportunities, and full-stack projects.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-card">
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-main);">Contact Information</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Feel free to reach out directly via email, message me on LinkedIn, or connect through GitHub.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <span class="contact-label">Email Addresses</span>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div style="display: flex; align-items: center;">
+                    <a href="mailto:gandikotiravi649@gmail.com" class="contact-value" id="email-link">gandikotiravi649@gmail.com</a>
+                    <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy Email">📋</button>
+                  </div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted);">
+                    College: <a href="mailto:gandcs048@rmkcet.ac.in" style="color: var(--primary-light); text-decoration: none;">gandcs048@rmkcet.ac.in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">📱</div>
+              <div>
+                <span class="contact-label">Phone Number</span>
+                <a href="tel:+918522093987" class="contact-value">+91 8522093987</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">💼</div>
+              <div>
+                <span class="contact-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  linkedin.com/in/gandikotaravi ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background: rgba(236, 72, 153, 0.15); color: var(--secondary);">🐙</div>
+              <div>
+                <span class="contact-label">GitHub Profile</span>
+                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  github.com/GandikotiRavi ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">📍</div>
+              <div>
+                <span class="contact-label">Location</span>
+                <div class="contact-value">Nellore, Andhra Pradesh / Chennai, India</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+              <span class="contact-label">Connect On Socials</span>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                  in
+                </a>
+                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                  gh
+                </a>
+                <a href="mailto:gandcs048@rmkcet.ac.in" class="social-btn" title="Email">
+                  @
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-main);">Send a Message</h3>
+            
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo-wrapper">
+        <div class="logo-badge" style="width: 32px; height: 32px; font-size: 0.95rem;">RG</div>
+        <span style="font-size: 1.1rem;">Gandikota Ravi Chandra</span>
+      </div>
+      <p class="footer-text">
+        © 2026 Gandikota Ravi Chandra. Built with HTML5, Modern CSS & JavaScript. All rights reserved.
+      </p>
+      <div class="social-links" style="margin-top: 0;">
+        <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">in</a>
+        <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">gh</a>
+        <a href="mailto:gandcs048@rmkcet.ac.in" class="social-btn" title="Email">@</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <span id="toast-icon">✅</span>
+    <span id="toast-message">Action successful!</span>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
