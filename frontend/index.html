@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Gandikota Ravi Chandra - Full Stack Engineer, creator of TransplantIQ, Hostel Management, Student Management, and B.Tech CSE student at RMK College of Engineering and Technology.">
   <meta name="author" content="Gandikota Ravi Chandra">
-  <title>Gandikota Ravi Chandra | Full Stack Engineer & Cloud Enthusiast</title>
+  <title>Gandikota Ravi Chandra | Full Stack Engineer & Creative Developer</title>
   
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,30 +13,50 @@
 </head>
 <body>
 
-  <!-- Ambient Glow Effects -->
+  <!-- ==================== 3D INTERACTIVE CANVAS & GLOWS ==================== -->
+  <canvas id="cyber-3d-canvas"></canvas>
+
   <div class="ambient-glow glow-top-left"></div>
   <div class="ambient-glow glow-center-right"></div>
-  <div class="ambient-glow glow-bottom-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
 
-  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <!-- ==================== 3D CYBER WARP WIPE OVERLAY ==================== -->
+  <div class="cyber-3d-wipe" id="cyber-wipe">
+    <div class="cyber-3d-wipe-beam"></div>
+  </div>
+
+  <!-- ==================== TOP NAVIGATION BAR ==================== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#home" class="logo-wrapper">
-        <span>Ravi</span><span class="logo-dot">.</span>
+      <a href="#home" class="logo-wrapper" data-page="home">
+        <span>ravi chandra</span><span class="logo-dot">.</span>
       </a>
 
       <nav>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#about" class="nav-link">About Us</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-page="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+          <li><a href="#experience" class="nav-link" data-page="experience">Experience</a></li>
+          <li><a href="#education" class="nav-link" data-page="education">Education</a></li>
+          <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <a href="#contact" class="hero-resume-link" style="padding: 7px 18px; font-size: 0.82rem; letter-spacing: 0.05em;">Contact</a>
+        <div class="nav-social-row">
+          <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="nav-social-btn" title="LinkedIn Profile">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.89H5.06v8.61h2.8z"/></svg>
+          </a>
+          <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="nav-social-btn" title="GitHub Profile">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          </a>
+          <a href="https://drive.google.com/file/d/1GDDbwmtEYz0ow_tuL0toMteHEJgGu0vM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary-3d" style="padding: 7px 16px; font-size: 0.8rem; letter-spacing: 0.05em;" title="View Resume on Google Drive">
+            <span>Resume</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
         <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">
           ☰
         </button>
@@ -44,74 +64,112 @@
     </div>
   </header>
 
-  <main>
-    <!-- ==================== HERO SECTION (ANID WROOKS COMPOSITION) ==================== -->
-    <section class="hero-screen" id="home">
-      <!-- Atmospheric radiant purple bloom behind portrait -->
-      <div class="hero-aura-glow"></div>
+  <!-- ==================== FLOATING RIGHT 3D NAVIGATION DOCK ==================== -->
+  <aside class="floating-dock-3d" id="floating-dock" aria-label="3D Navigation Dock">
+    <button class="dock-btn active" data-page="home" title="Home">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span class="dock-tooltip">Home</span>
+    </button>
+    <button class="dock-btn" data-page="about" title="About Me">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <span class="dock-tooltip">About Me</span>
+    </button>
+    <button class="dock-btn" data-page="skills" title="Skills">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      <span class="dock-tooltip">Skills</span>
+    </button>
+    <button class="dock-btn" data-page="projects" title="Projects">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      <span class="dock-tooltip">Projects</span>
+    </button>
+    <button class="dock-btn" data-page="experience" title="Experience">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+      <span class="dock-tooltip">Experience</span>
+    </button>
+    <button class="dock-btn" data-page="education" title="Education">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+      <span class="dock-tooltip">Education</span>
+    </button>
+    <button class="dock-btn" data-page="contact" title="Contact">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      <span class="dock-tooltip">Contact</span>
+    </button>
+  </aside>
 
-      <div class="container hero-grid-layout">
-        <!-- Mid-Left Column: Greeting, Stacked Name, Vertical Social Column -->
-        <div class="hero-col-left">
-          <div class="hero-intro-text">
-            <span class="hero-greeting">Hello, I'm</span>
-            <h1 class="hero-name">
-              <span>Ravi</span>
-              <span>Chandra</span>
-            </h1>
+  <!-- ==================== 3D PAGE VIEWPORT ==================== -->
+  <main class="page-viewport-3d" id="page-viewport">
+
+    <!-- ==================== PAGE 1: HERO SECTION ==================== -->
+    <section class="section-page-3d hero-screen page-active" id="home">
+      <div class="container hero-grid-3d">
+        <!-- Content Column -->
+        <div class="hero-content-col">
+          <div class="hero-badge-pill">
+            <span class="badge-pulse-dot"></span>
+            <span>Software Engineer • Web Developer</span>
           </div>
 
-          <div class="hero-social-col">
-            <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="LinkedIn Profile">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.89H5.06v8.61h2.8z"/></svg>
+          <h1 class="hero-title-main">
+            <span>Transforming Ideas</span>
+            <span>Into <span class="text-crimson-gradient">Digital Reality</span></span>
+          </h1>
+
+          <p class="hero-description-text">
+            Full Stack Engineer and Computer Science student at RMK College of Engineering and Technology. Creator of <strong>TransplantIQ</strong>, enterprise hostel and academic platforms, with practical industry experience engineering scalable REST APIs, cloud workflows, and interactive web experiences.
+          </p>
+
+          <div class="hero-action-row">
+            <!-- Rotating Circular "MY PROJECTS" Stamp Badge -->
+            <a href="#projects" class="stamp-badge-3d" title="Explore Featured Projects" data-page="projects">
+              <svg class="stamp-rotating-text" viewBox="0 0 160 160">
+                <defs>
+                  <path id="circlePath" d="M 80, 80 m -58, 0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0" />
+                </defs>
+                <text font-family="'Space Grotesk', sans-serif" font-size="11.5" font-weight="700" fill="#f87171" letter-spacing="3.8px">
+                  <textPath xlink:href="#circlePath" href="#circlePath">
+                    • MY PROJECTS • MY PROJECTS •
+                  </textPath>
+                </text>
+              </svg>
+              <div class="stamp-center-arrow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
             </a>
-            <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="GitHub Profile">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-            </a>
-            <a href="https://github.com/GandikotiRavi/Portfolio" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="Portfolio Source Code">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-            </a>
-            <a href="mailto:gandikotiravi649@gmail.com" class="hero-social-link" title="Email Ravi">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
+
+            <!-- Buttons Group -->
+            <div class="hero-buttons-group">
+              <a href="https://drive.google.com/file/d/1GDDbwmtEYz0ow_tuL0toMteHEJgGu0vM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary-3d">
+                <span>Resume ↗</span>
+              </a>
+              <a href="#contact" class="btn-secondary-3d" data-page="contact">
+                <span>Connect With Me</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Center Column: Glowing Cutout Portrait with subtle bottom fade -->
-        <div class="hero-col-center">
-          <div class="hero-portrait-wrapper">
-            <img src="assets/profile-nobg.png" alt="Gandikota Ravi Chandra" class="hero-portrait-img">
+        <!-- 3D Holographic HUD Portal & Cutout Portrait -->
+        <div class="hero-visual-col">
+          <div class="hero-hud-portal">
+            <div class="hud-portal-glow"></div>
+            <div class="hud-ring-outer"></div>
+            <div class="hud-ring-mid"></div>
+            <div class="hud-ring-inner"></div>
+          </div>
+
+          <div class="hero-portrait-container">
+            <img src="assets/profile-nobg.png" alt="Gandikota Ravi Chandra" class="hero-portrait-img" id="hero-portrait">
             <div class="hero-portrait-fade"></div>
-          </div>
-        </div>
-
-        <!-- Mid-Right Column: Stacked Creative Title + Availability Badge + RESUME Action -->
-        <div class="hero-col-right">
-          <div>
-            <div class="hero-title-right">
-              <span class="text-white">Creative</span>
-              <span class="text-purple-gradient">Developer</span>
-              <span class="text-white">& Engineer</span>
-            </div>
-
-            <div class="hero-opportunity-badge">
-              <span class="badge-pulse-dot"></span>
-              <span>Available for Web Dev • SWE Roles</span>
-            </div>
-          </div>
-
-          <div class="hero-resume-wrapper">
-            <a href="mailto:gandikotiravi649@gmail.com?subject=Resume%20Inquiry%20-%20Gandikota%20Ravi%20Chandra" class="hero-resume-link">
-              <span>RESUME</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section class="section" id="about">
+    <!-- ==================== PAGE 2: ABOUT SECTION ==================== -->
+    <section class="section-page-3d section" id="about">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">About Me</span>
@@ -122,7 +180,8 @@
         </div>
 
         <div class="about-grid">
-          <div class="about-card">
+          <div class="about-card tilt-card-3d">
+            <div class="card-glare"></div>
             <h4>
               <span>👨‍💻</span>
               <span>Who I Am</span>
@@ -149,7 +208,8 @@
             </ul>
           </div>
 
-          <div class="about-card">
+          <div class="about-card tilt-card-3d">
+            <div class="card-glare"></div>
             <h4>
               <span>📋</span>
               <span>Quick Overview</span>
@@ -181,7 +241,7 @@
               </div>
               <div class="info-item">
                 <span class="info-label">Flagship Project</span>
-                <span class="info-value" style="color: var(--secondary);">TransplantIQ Platform</span>
+                <span class="info-value" style="color: var(--accent-crimson);">TransplantIQ Platform</span>
               </div>
               <div class="info-item">
                 <span class="info-label">Availability</span>
@@ -189,11 +249,11 @@
               </div>
             </div>
 
-            <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
-              <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 150px; font-size: 0.85rem;">
-                LinkedIn Profile ↗
+            <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="https://drive.google.com/file/d/1GDDbwmtEYz0ow_tuL0toMteHEJgGu0vM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary-3d" style="flex: 1; min-width: 170px; font-size: 0.88rem; justify-content: center;">
+                Download Resume ↗
               </a>
-              <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1; min-width: 150px; font-size: 0.85rem;">
+              <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="btn-secondary-3d" style="flex: 1; min-width: 150px; font-size: 0.88rem; justify-content: center;">
                 GitHub Profile ↗
               </a>
             </div>
@@ -202,14 +262,257 @@
       </div>
     </section>
 
-    <!-- ==================== EXPERIENCE SECTION ==================== -->
-    <section class="section" id="experience" style="background: rgba(15, 21, 38, 0.4);">
+    <!-- ==================== PAGE 3: SKILLS SECTION ==================== -->
+    <section class="section-page-3d section" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Work Experience</span>
-          <h2 class="section-title">Professional Journey</h2>
+          <span class="section-badge">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
           <p class="section-description">
-            Hands-on software development experience building production-ready architectures and scalable web products.
+            A versatile set of programming languages, frameworks, and developer tools used to engineer high-quality software.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card tilt-card-3d">
+            <div class="card-glare"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper">💻</div>
+              <div>
+                <h3 class="skill-card-title">Frontend Development</h3>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">User Interface & Experience</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3 / Modern CSS</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Flexbox & CSS Grid</span>
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">UI/UX Principles</span>
+              <span class="skill-tag">3D Transforms & Animations</span>
+            </div>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-card tilt-card-3d">
+            <div class="card-glare"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" style="background: rgba(249, 115, 22, 0.12); border-color: rgba(249, 115, 22, 0.25); color: var(--accent-orange);">⚙️</div>
+              <div>
+                <h3 class="skill-card-title">Backend & APIs</h3>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Server-side Architecture</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Database CRUD Operations</span>
+              <span class="skill-tag">JSON Data Handlers</span>
+              <span class="skill-tag">CORS Middleware</span>
+              <span class="skill-tag">API Integration</span>
+              <span class="skill-tag">Asynchronous JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Tools & Cloud -->
+          <div class="skill-card tilt-card-3d">
+            <div class="card-glare"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" style="background: rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.25); color: var(--accent-violet);">☁️</div>
+              <div>
+                <h3 class="skill-card-title">Cloud, Database & Tools</h3>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Deployment & Workflow</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Cloud Computing</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">NPM</span>
+              <span class="skill-tag">CI/CD Concepts</span>
+              <span class="skill-tag">Web Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 4: PROJECTS SECTION ==================== -->
+    <section class="section-page-3d section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfolio Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            Explore selected projects including TransplantIQ, institutional management platforms, e-commerce, and full-stack web applications.
+          </p>
+        </div>
+
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="healthcare">Healthcare & AI</button>
+          <button class="filter-btn" data-filter="management">Management Systems</button>
+          <button class="filter-btn" data-filter="webapps">Full Stack Apps</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- 1. TransplantIQ -->
+          <div class="project-card tilt-card-3d" data-category="healthcare">
+            <div class="card-glare"></div>
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.35), rgba(249, 115, 22, 0.4));">
+              <span class="project-banner-icon">🫀</span>
+              <span class="project-category-badge">Flagship / Healthcare AI</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">TransplantIQ - Agentic AI Organ Transplant Coordination</h3>
+              <p class="project-desc">
+                An Agentic AI-powered organ transplant coordination and clinical decision support system (Db2Hack 2026). Features automated donor-recipient compatibility assessment, critical organ status & transit tracking, and clinical workflow synchronization.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">Agentic AI</span>
+                <span class="tech-pill">RESTful APIs</span>
+                <span class="tech-pill">Modern UI/UX</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/TransplantIQ" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Smart Hostel Management System -->
+          <div class="project-card tilt-card-3d" data-category="management">
+            <div class="card-glare"></div>
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(239, 68, 68, 0.4));">
+              <span class="project-banner-icon">🏢</span>
+              <span class="project-category-badge">Management System</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Smart Hostel Management System</h3>
+              <p class="project-desc">
+                An end-to-end residential accommodation platform designed for college campuses and hostels. Automates room allocation, resident onboarding, leave application approvals, maintenance complaint ticketing, and real-time room occupancy analytics.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">Database CRUD</span>
+                <span class="tech-pill">CSS3 Flexbox</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/Hostel-Management-System" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Academic Student Management System -->
+          <div class="project-card tilt-card-3d" data-category="management">
+            <div class="card-glare"></div>
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.35), rgba(6, 182, 212, 0.4));">
+              <span class="project-banner-icon">🎓</span>
+              <span class="project-category-badge">EdTech & Management</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Academic Student Management System</h3>
+              <p class="project-desc">
+                A centralized academic administration platform for educational institutions to manage complete student lifecycle records: course enrollment, semester attendance monitoring, internal assessment grading, and automated report card generation.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">Database Management</span>
+                <span class="tech-pill">UI Dashboards</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Task Management Application -->
+          <div class="project-card tilt-card-3d" data-category="webapps">
+            <div class="card-glare"></div>
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(168, 85, 247, 0.3));">
+              <span class="project-banner-icon">📝</span>
+              <span class="project-category-badge">Full Stack & Productivity</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Task Management Application (TaskFlow)</h3>
+              <p class="project-desc">
+                A comprehensive full-stack task management application enabling users to organize goals, categorize tasks by priority, update completion status, track deadlines, and persist records with secure authentication and real-time status updates.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/Task-Management-Application" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Personal Portfolio Website -->
+          <div class="project-card tilt-card-3d" data-category="webapps">
+            <div class="card-glare"></div>
+            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(139, 92, 246, 0.35));">
+              <span class="project-banner-icon">🌐</span>
+              <span class="project-category-badge">Portfolio & Web App</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A modern 3D full-stack developer portfolio featuring interactive 3D particle constellation visuals, smooth 3D page transitions, dynamic REST API backend integration, and interactive project showcases.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3 / 3D Transforms</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/GandikotiRavi/Portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Code & Repo</span> →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 5: EXPERIENCE SECTION ==================== -->
+    <section class="section-page-3d section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Career Journey</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-description">
+            Hands-on professional engineering experience building scalable web solutions and enterprise applications.
           </p>
         </div>
 
@@ -217,7 +520,8 @@
           <!-- 1. Thiranex -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-card">
+            <div class="timeline-card tilt-card-3d">
+              <div class="card-glare"></div>
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role">Full Stack Development Intern</h3>
@@ -247,14 +551,15 @@
 
           <!-- 2. StaxTech -->
           <div class="timeline-item">
-            <div class="timeline-dot" style="border-color: var(--accent-cyan); box-shadow: 0 0 15px var(--accent-cyan);"></div>
-            <div class="timeline-card">
+            <div class="timeline-dot" style="border-color: var(--accent-orange); box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);"></div>
+            <div class="timeline-card tilt-card-3d">
+              <div class="card-glare"></div>
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role">Web Development Intern</h3>
-                  <div class="timeline-company">StaxTech</div>
+                  <div class="timeline-company" style="color: var(--accent-orange);">StaxTech</div>
                 </div>
-                <span class="timeline-badge" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3);">Jul 10 – Aug 10</span>
+                <span class="timeline-badge" style="background: rgba(249, 115, 22, 0.15); color: #fed7aa; border-color: rgba(249, 115, 22, 0.3);">Jul 10 – Aug 10</span>
               </div>
               <p class="timeline-desc">
                 Developed responsive web applications including an e-commerce platform and an interactive quiz game utilizing modern HTML5, CSS3, and JavaScript.
@@ -275,243 +580,8 @@
       </div>
     </section>
 
-    <!-- ==================== SKILLS SECTION ==================== -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Technical Arsenal</span>
-          <h2 class="section-title">Skills & Technologies</h2>
-          <p class="section-description">
-            A versatile set of programming languages, frameworks, and developer tools used to engineer high-quality software.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Frontend -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon-wrapper icon-frontend">💻</div>
-              <div>
-                <h3 class="skill-card-title">Frontend Development</h3>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">User Interface & Experience</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3 / Modern CSS</span>
-              <span class="skill-tag">JavaScript (ES6+)</span>
-              <span class="skill-tag">Responsive Design</span>
-              <span class="skill-tag">Flexbox & CSS Grid</span>
-              <span class="skill-tag">DOM Manipulation</span>
-              <span class="skill-tag">UI/UX Principles</span>
-              <span class="skill-tag">Glassmorphism & Micro-animations</span>
-            </div>
-          </div>
-
-          <!-- Backend & APIs -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon-wrapper icon-backend">⚙️</div>
-              <div>
-                <h3 class="skill-card-title">Backend & APIs</h3>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Server-side Architecture</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">RESTful APIs</span>
-              <span class="skill-tag">Database CRUD Operations</span>
-              <span class="skill-tag">JSON Data Handlers</span>
-              <span class="skill-tag">CORS Middleware</span>
-              <span class="skill-tag">API Integration</span>
-              <span class="skill-tag">Asynchronous JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Tools & Cloud -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon-wrapper icon-tools">☁️</div>
-              <div>
-                <h3 class="skill-card-title">Cloud, Database & Tools</h3>
-                <span style="font-size: 0.8rem; color: var(--text-dim);">Deployment & Workflow</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Cloud Computing</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Postman</span>
-              <span class="skill-tag">NPM</span>
-              <span class="skill-tag">CI/CD Concepts</span>
-              <span class="skill-tag">Web Deployment</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== PROJECTS SECTION ==================== -->
-    <section class="section" id="projects" style="background: rgba(15, 21, 38, 0.4);">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Portfolio Works</span>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-description">
-            Explore selected projects including TransplantIQ, institutional management platforms, e-commerce, and full-stack web applications.
-          </p>
-        </div>
-
-        <div class="projects-filter-bar">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="healthcare">Healthcare & AI</button>
-          <button class="filter-btn" data-filter="management">Management Systems</button>
-          <button class="filter-btn" data-filter="webapps">Full Stack Apps</button>
-        </div>
-
-        <div class="projects-grid" id="projects-container">
-          <!-- 1. TransplantIQ -->
-          <div class="project-card" data-category="healthcare">
-            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.35), rgba(99, 102, 241, 0.4));">
-              <span class="project-banner-icon">🫀</span>
-              <span class="project-category-badge">Flagship / Healthcare AI</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">TransplantIQ - Agentic AI Organ Transplant Coordination</h3>
-              <p class="project-desc">
-                An Agentic AI-powered organ transplant coordination and clinical decision support system (Db2Hack 2026). Features automated donor-recipient compatibility assessment, critical organ status & transit tracking, and clinical workflow synchronization.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-pill">Python</span>
-                <span class="tech-pill">Node.js</span>
-                <span class="tech-pill">Express.js</span>
-                <span class="tech-pill">Agentic AI</span>
-                <span class="tech-pill">RESTful APIs</span>
-                <span class="tech-pill">Modern UI/UX</span>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/GandikotiRavi/TransplantIQ" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>View Code & Repo</span> →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2. Smart Hostel Management System -->
-          <div class="project-card" data-category="management">
-            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(239, 68, 68, 0.4));">
-              <span class="project-banner-icon">🏢</span>
-              <span class="project-category-badge">Management System</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">Smart Hostel Management System</h3>
-              <p class="project-desc">
-                An end-to-end residential accommodation platform designed for college campuses and hostels. Automates room allocation, resident onboarding, leave application approvals, maintenance complaint ticketing, and real-time room occupancy analytics.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-pill">JavaScript (ES6+)</span>
-                <span class="tech-pill">Node.js</span>
-                <span class="tech-pill">Express.js</span>
-                <span class="tech-pill">Database CRUD</span>
-                <span class="tech-pill">CSS3 Flexbox</span>
-                <span class="tech-pill">REST APIs</span>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/GandikotiRavi/Hostel-Management-System" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>View Code & Repo</span> →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. Academic Student Management System -->
-          <div class="project-card" data-category="management">
-            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.35), rgba(6, 182, 212, 0.4));">
-              <span class="project-banner-icon">🎓</span>
-              <span class="project-category-badge">EdTech & Management</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">Academic Student Management System</h3>
-              <p class="project-desc">
-                A centralized academic administration platform for educational institutions to manage complete student lifecycle records: course enrollment, semester attendance monitoring, internal assessment grading, and automated report card generation.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-pill">JavaScript</span>
-                <span class="tech-pill">Node.js</span>
-                <span class="tech-pill">Express.js</span>
-                <span class="tech-pill">REST APIs</span>
-                <span class="tech-pill">Database Management</span>
-                <span class="tech-pill">UI Dashboards</span>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>View Code & Repo</span> →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4. Task Management Application -->
-          <div class="project-card" data-category="webapps">
-            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(168, 85, 247, 0.3));">
-              <span class="project-banner-icon">📝</span>
-              <span class="project-category-badge">Full Stack & Productivity</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">Task Management Application (TaskFlow)</h3>
-              <p class="project-desc">
-                A comprehensive full-stack task management application enabling users to organize goals, categorize tasks by priority, update completion status, track deadlines, and persist records with secure authentication and real-time status updates.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-pill">React.js</span>
-                <span class="tech-pill">Node.js</span>
-                <span class="tech-pill">Express.js</span>
-                <span class="tech-pill">MongoDB</span>
-                <span class="tech-pill">JavaScript</span>
-                <span class="tech-pill">REST APIs</span>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/GandikotiRavi/Task-Management-Application" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>View Code & Repo</span> →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. Personal Portfolio Website -->
-          <div class="project-card" data-category="webapps">
-            <div class="project-card-banner" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(99, 102, 241, 0.35));">
-              <span class="project-banner-icon">🌐</span>
-              <span class="project-category-badge">Portfolio & Web App</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">Personal Portfolio Website</h3>
-              <p class="project-desc">
-                A modern, responsive full-stack developer portfolio featuring glassmorphic design, dynamic REST API backend integration, custom dark/light theme switching, and interactive project showcases.
-              </p>
-              <div class="project-tech-stack">
-                <span class="tech-pill">HTML5</span>
-                <span class="tech-pill">CSS3 / Modern CSS</span>
-                <span class="tech-pill">JavaScript (ES6+)</span>
-                <span class="tech-pill">Node.js</span>
-                <span class="tech-pill">Express.js</span>
-                <span class="tech-pill">REST APIs</span>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/GandikotiRavi/Portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <span>View Code & Repo</span> →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== EDUCATION SECTION ==================== -->
-    <section class="section" id="education">
+    <!-- ==================== PAGE 6: EDUCATION SECTION ==================== -->
+    <section class="section-page-3d section" id="education">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">Academic Background</span>
@@ -523,76 +593,78 @@
 
         <div class="education-grid">
           <!-- 1. B.E. CSE -->
-          <div class="education-card">
-            <div class="edu-icon-box">🎓</div>
-            <div class="edu-details">
-              <div class="education-card-header">
-                <div>
-                  <h4>Bachelor of Engineering (B.E.)</h4>
-                  <div class="edu-institution">Computer Science and Engineering (Cloud Computing)</div>
-                </div>
-                <span class="edu-score-pill">CGPA: 7.41 / 10.0</span>
-              </div>
-              <p class="edu-stream">
-                <strong>R.M.K. College of Engineering and Technology (RMKCET)</strong> • Chennai, Tamil Nadu
-              </p>
-              <div class="edu-meta">
-                <span>📅 <strong>2023 – 2027</strong> (Final Year / Graduating 2027)</span>
-                <span>📍 Chennai, India</span>
-                <span>📚 Specialization: Cloud Technologies, Full Stack Web Development, Data Structures, Software Engineering</span>
-              </div>
+          <div class="education-card tilt-card-3d">
+            <div class="card-glare"></div>
+            <div class="education-header">
+              <div class="education-icon">🎓</div>
+              <span class="education-badge">CGPA: 7.41 / 10.0</span>
+            </div>
+            <h4 class="education-degree">Bachelor of Engineering (B.E.)</h4>
+            <div class="education-school">Computer Science & Engineering (Cloud Computing)</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
+              <strong>R.M.K. College of Engineering and Technology (RMKCET)</strong> • Chennai, Tamil Nadu
+            </p>
+            <div style="font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px;">
+              <span>📅 <strong>2023 – 2027</strong> (Graduating Class of 2027)</span>
+              <span>📚 Focus: Cloud Technologies, Full Stack Web Development, Data Structures, Software Engineering</span>
+            </div>
+            <div class="education-score-box">
+              <span class="score-label">Academic Status</span>
+              <span class="score-value" style="color: var(--accent-crimson);">Active • Final Year</span>
             </div>
           </div>
 
           <!-- 2. Intermediate (Class XII) -->
-          <div class="education-card">
-            <div class="edu-icon-box icon-inter">🏫</div>
-            <div class="edu-details">
-              <div class="education-card-header">
-                <div>
-                  <h4>Higher Secondary / Intermediate (Class XII)</h4>
-                  <div class="edu-institution">MPC (Mathematics, Physics & Chemistry)</div>
-                </div>
-                <span class="edu-score-pill pill-cyan">Marks: 91%</span>
-              </div>
-              <p class="edu-stream">
-                <strong>Narayana Junior College</strong> • Board of Intermediate Education
-              </p>
-              <div class="edu-meta">
-                <span>📅 <strong>2021 – 2023</strong></span>
-                <span>🏆 First Class with Distinction (91%)</span>
-                <span>🔬 Focus: Advanced Mathematics, Physics, Chemistry, Analytical Problem Solving</span>
-              </div>
+          <div class="education-card tilt-card-3d">
+            <div class="card-glare"></div>
+            <div class="education-header">
+              <div class="education-icon" style="background: rgba(249, 115, 22, 0.12); color: var(--accent-orange);">🏫</div>
+              <span class="education-badge" style="background: rgba(249, 115, 22, 0.15); color: #fed7aa; border-color: rgba(249, 115, 22, 0.3);">Score: 91%</span>
+            </div>
+            <h4 class="education-degree">Higher Secondary / Intermediate (Class XII)</h4>
+            <div class="education-school" style="color: var(--accent-orange);">MPC (Mathematics, Physics & Chemistry)</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
+              <strong>Narayana Junior College</strong> • Board of Intermediate Education
+            </p>
+            <div style="font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px;">
+              <span>📅 <strong>2021 – 2023</strong></span>
+              <span>🏆 First Class with Distinction (91%)</span>
+              <span>🔬 Focus: Advanced Mathematics, Physics, Chemistry, Analytical Problem Solving</span>
+            </div>
+            <div class="education-score-box">
+              <span class="score-label">Graduation Grade</span>
+              <span class="score-value" style="color: var(--accent-orange);">91% (Distinction)</span>
             </div>
           </div>
 
           <!-- 3. 10th Standard (SSC) -->
-          <div class="education-card">
-            <div class="edu-icon-box icon-school">📜</div>
-            <div class="edu-details">
-              <div class="education-card-header">
-                <div>
-                  <h4>Secondary School Certificate (10th Standard / Class X)</h4>
-                  <div class="edu-institution">Secondary Education (SSC)</div>
-                </div>
-                <span class="edu-score-pill pill-emerald">Marks: 98%</span>
-              </div>
-              <p class="edu-stream">
-                <strong>Narayana High School</strong> • State Board (SSC)
-              </p>
-              <div class="edu-meta">
-                <span>📅 <strong>2020 – 2021</strong></span>
-                <span>🏆 Outstanding Academic Excellence (98%)</span>
-                <span>📖 Focus: Mathematics, Science, English, Social Studies & Foundational Aptitude</span>
-              </div>
+          <div class="education-card tilt-card-3d">
+            <div class="card-glare"></div>
+            <div class="education-header">
+              <div class="education-icon" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);">📜</div>
+              <span class="education-badge" style="background: rgba(16, 185, 129, 0.15); color: #a7f3d0; border-color: rgba(16, 185, 129, 0.3);">Score: 98%</span>
+            </div>
+            <h4 class="education-degree">Secondary School Certificate (Class X)</h4>
+            <div class="education-school" style="color: var(--accent-emerald);">State Board (SSC)</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">
+              <strong>Narayana High School</strong> • State Board Education
+            </p>
+            <div style="font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px;">
+              <span>📅 <strong>2020 – 2021</strong></span>
+              <span>🏆 Outstanding Academic Excellence (98%)</span>
+              <span>📖 Focus: Mathematics, Science, English & Foundational Aptitude</span>
+            </div>
+            <div class="education-score-box">
+              <span class="score-label">Graduation Grade</span>
+              <span class="score-value" style="color: var(--accent-emerald);">98% (Exemplary)</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section class="section" id="contact" style="background: rgba(15, 21, 38, 0.4);">
+    <!-- ==================== PAGE 7: CONTACT SECTION ==================== -->
+    <section class="section-page-3d section" id="contact">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">Get In Touch</span>
@@ -604,83 +676,58 @@
 
         <div class="contact-grid">
           <!-- Contact Info Cards -->
-          <div class="contact-info-card">
+          <div class="contact-info-card tilt-card-3d">
+            <div class="card-glare"></div>
             <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-main);">Contact Information</h3>
             <p style="color: var(--text-muted); font-size: 0.95rem;">
               Feel free to reach out directly via email, message me on LinkedIn, or connect through GitHub.
             </p>
 
-            <div class="contact-item">
+            <div class="contact-method">
               <div class="contact-icon">📧</div>
-              <div>
-                <span class="contact-label">Email Addresses</span>
-                <div style="display: flex; flex-direction: column; gap: 4px;">
-                  <div style="display: flex; align-items: center;">
-                    <a href="mailto:gandikotiravi649@gmail.com" class="contact-value" id="email-link">gandikotiravi649@gmail.com</a>
-                    <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy Email">📋</button>
-                  </div>
-                  <div style="font-size: 0.85rem; color: var(--text-muted);">
-                    College: <a href="mailto:gandcs048@rmkcet.ac.in" style="color: var(--primary-light); text-decoration: none;">gandcs048@rmkcet.ac.in</a>
-                  </div>
+              <div class="contact-details">
+                <h5>Email Addresses</h5>
+                <div>
+                  <a href="mailto:gandikotiravi649@gmail.com" id="email-link">gandikotiravi649@gmail.com</a>
+                  <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy Email" style="background:none; border:none; cursor:pointer; margin-left:6px;">📋</button>
+                </div>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+                  College: <a href="mailto:gandcs048@rmkcet.ac.in" style="color: var(--accent-crimson); text-decoration: none;">gandcs048@rmkcet.ac.in</a>
                 </div>
               </div>
             </div>
 
-            <div class="contact-item">
+            <div class="contact-method">
               <div class="contact-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">📱</div>
-              <div>
-                <span class="contact-label">Phone Number</span>
-                <a href="tel:+918522093987" class="contact-value">+91 8522093987</a>
+              <div class="contact-details">
+                <h5>Phone Number</h5>
+                <a href="tel:+918522093987">+91 8522093987</a>
               </div>
             </div>
 
-            <div class="contact-item">
-              <div class="contact-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">💼</div>
-              <div>
-                <span class="contact-label">LinkedIn Profile</span>
-                <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="contact-value">
-                  linkedin.com/in/gandikotaravi ↗
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon" style="background: rgba(236, 72, 153, 0.15); color: var(--secondary);">🐙</div>
-              <div>
-                <span class="contact-label">GitHub Profile</span>
-                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="contact-value">
-                  github.com/GandikotiRavi ↗
+            <div class="contact-method">
+              <div class="contact-icon" style="background: rgba(239, 68, 68, 0.15); color: var(--accent-crimson);">💼</div>
+              <div class="contact-details">
+                <h5>Official Resume</h5>
+                <a href="https://drive.google.com/file/d/1GDDbwmtEYz0ow_tuL0toMteHEJgGu0vM/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: var(--accent-crimson);">
+                  View on Google Drive ↗
                 </a>
               </div>
             </div>
 
-            <div class="contact-item">
-              <div class="contact-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">📍</div>
-              <div>
-                <span class="contact-label">Location</span>
-                <div class="contact-value">Nellore, Andhra Pradesh / Chennai, India</div>
-              </div>
-            </div>
-
-            <div style="margin-top: 10px;">
-              <span class="contact-label">Connect On Socials</span>
-              <div class="social-links">
-                <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
-                  in
-                </a>
-                <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
-                  gh
-                </a>
-                <a href="mailto:gandcs048@rmkcet.ac.in" class="social-btn" title="Email">
-                  @
-                </a>
+            <div class="contact-method">
+              <div class="contact-icon" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-orange);">📍</div>
+              <div class="contact-details">
+                <h5>Location</h5>
+                <p>Nellore, Andhra Pradesh / Chennai, India</p>
               </div>
             </div>
           </div>
 
           <!-- Contact Form -->
-          <form class="contact-form" id="contact-form">
-            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-main);">Send a Message</h3>
+          <form class="contact-form tilt-card-3d" id="contact-form">
+            <div class="card-glare"></div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-main);">Send a Direct Message</h3>
             
             <div class="form-group">
               <label for="name" class="form-label">Your Name</label>
@@ -702,7 +749,7 @@
               <textarea id="message" name="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">
+            <button type="submit" class="btn-primary-3d" style="width: 100%; justify-content: center; margin-top: 8px;">
               <span>Send Message</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
             </button>
@@ -710,21 +757,28 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="container footer-content">
-      <a href="#home" class="logo-wrapper">
-        <span>Ravi</span><span class="logo-dot">.</span>
+      <a href="#home" class="logo-wrapper" data-page="home">
+        <span>ravi chandra</span><span class="logo-dot">.</span>
       </a>
       <p class="footer-text">
-        © 2026 Gandikota Ravi Chandra. Built with HTML5, Modern CSS & JavaScript. All rights reserved.
+        © 2026 Gandikota Ravi Chandra. 3D Developer Portfolio. All rights reserved.
       </p>
-      <div class="social-links" style="margin-top: 0;">
-        <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">in</a>
-        <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">gh</a>
-        <a href="mailto:gandcs048@rmkcet.ac.in" class="social-btn" title="Email">@</a>
+      <div class="footer-social-row">
+        <a href="https://www.linkedin.com/in/gandikotaravi/" target="_blank" rel="noopener noreferrer" class="nav-social-btn" title="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.89H5.06v8.61h2.8z"/></svg>
+        </a>
+        <a href="https://github.com/GandikotiRavi" target="_blank" rel="noopener noreferrer" class="nav-social-btn" title="GitHub">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="https://drive.google.com/file/d/1GDDbwmtEYz0ow_tuL0toMteHEJgGu0vM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="nav-social-btn" title="Google Drive Resume">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </a>
       </div>
     </div>
   </footer>
